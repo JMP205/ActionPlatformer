@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: CaterEnemyController
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":273.7085,"y":9.824073},"zoom":0.8,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-186.0,"y":-123.0},"guid":"5b80a3e0-222c-4fdb-a4a1-29a44b6ba9c3","$version":"A","$type":"Unity.VisualScripting.OnCollisionEnter2D","$id":"9"},{"defaultValues":{},"position":{"x":410.0,"y":-108.0},"guid":"8f229b15-8cd3-4edb-a7e4-735e2011babf","$version":"A","$type":"Unity.VisualScripting.If","$id":"11"},{"chainable":false,"parameterNames":["tag"],"member":{"name":"CompareTag","parameterTypes":["System.String"],"targetType":"UnityEngine.Component","targetTypeName":"UnityEngine.Component","$version":"A"},"defaultValues":{"target":null,"%tag":{"$content":"Player","$type":"System.String"}},"position":{"x":189.0,"y":-30.0},"guid":"d6443a29-ae9f-43b3-b165-acade6f14030","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"13"},{"argumentCount":0,"defaultValues":{"name":{"$content":"dead","$type":"System.String"},"target":null},"position":{"x":569.0,"y":-68.0},"guid":"b7f997db-a7a8-4f9b-adf5-5be59bbf8730","$version":"A","$type":"Unity.VisualScripting.TriggerCustomEvent","$id":"17"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"ac9b1135-9cd1-4390-897e-bd18abd23bba","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"11"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"6fef13da-77bf-4476-927a-eb9efa4374f0","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"result","destinationUnit":{"$ref":"11"},"destinationKey":"condition","guid":"7d1da820-e567-49f3-bff0-d22c1a37cacd","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"13"},"destinationKey":"target","guid":"63ce1eee-4ea4-4e15-9af9-eb0cf7e4df43","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"collider","destinationUnit":{"$ref":"17"},"destinationKey":"target","guid":"67942f37-e68e-4e99-8136-f824263ce7e4","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
